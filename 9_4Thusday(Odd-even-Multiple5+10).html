@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    table {
+      display: inline-block;
+      border-collapse: collapse;   
+    }
+
+    #odd{
+      position: relative;
+      top: -1050px;
+    }
+
+    #Multiple5{
+      position: relative;
+      top: -1680px;
+    }
+
+    #Multiple10{
+      position: relative;
+      top: -1890px;
+    }
+    
+</style>
+</head>
+<body>
+  <script type="text/javascript">
+    
+    
+    document.write("<table border='5'>");
+    document.write("<tr>");
+    document.write("<td>ID</td>");
+    document.write("</tr>");
+    //ID col 
+    var i=1;
+    while(i<=100){
+      document.write("<tr>");
+      document.write("<td>"+i+"</td>");
+      document.write("</tr>");
+      i++;
+    }
+    document.write("</table>");
+
+
+    document.write("<table border='5' id='odd'>");
+    document.write("<tr>");
+    document.write("<td>ODD</td>");
+    document.write("</tr>");
+    //OOD col 
+    var i=1;
+    while(i<=100){
+      document.write("<tr>");
+      if(i%2 != 0){
+        document.write("<td>"+i+"</td>");
+      }
+      document.write("</tr>");
+      i++;
+    }
+    document.write("</table>");
+
+
+    document.write("<table border='5' id='odd'>");
+    document.write("<tr>");
+    document.write("<td>Even</td>");
+    document.write("</tr>");
+    //EVEN col 
+    var i=1;
+    while(i<=100){
+      document.write("<tr>");
+      if(i%2 == 0){
+        document.write("<td>"+i+"</td>");
+      }
+      document.write("</tr>");
+      i++;
+    }
+    document.write("</table>");
+
+
+    document.write("<table border='5' id='Multiple5'>");
+    document.write("<tr>");
+    document.write("<td>Multiple of 5</td>");
+    document.write("</tr>");
+    //Multiple of 5 col 
+    var i=1;
+    while(i<=100){
+      document.write("<tr>");
+      if(i%5 == 0){
+        document.write("<td>"+i+"</td>");
+      }
+      document.write("</tr>");
+      i++;
+    }
+    document.write("</table>");
+
+
+    document.write("<table border='5' id='Multiple10'>");
+    document.write("<tr>");
+    document.write("<td>Multiple of 10</td>");
+    document.write("</tr>");
+    //Multiple of 10 col
+    var i=1;
+    while(i<=100){
+      document.write("<tr>");
+      if(i%10 == 0){
+        document.write("<td>"+i+"</td>");
+      }
+      document.write("</tr>");
+      i++;
+    }
+    document.write("</table>");
+
+
+
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		table, td {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<p>Click the button to add a new row at the first position of the table and then add cells and content.</p>
+	<form action="/action_page.php">
+		<label name="lname"># of rows</label><br>
+		<input type="text" id="fname" name="# of rows" value=""><br>
+		<label name="lname"># of cols</label><br>
+		<input type="text" id="lname" name="# of cols" value=""><br><br>
+		<button type="button" onclick="myFunction()">Submit</button>
+	</form>
+	<table id="myTable">
+
+	</table>
+	<br>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("fname").value;
+			var y = document.getElementById("lname").value;
+			var table = document.getElementById("myTable");
+			var i ,j;
+			var row,cell1;
+			for (i=0;i<x;i++)
+			{ 
+				row = table.insertRow(i);
+
+				for(j=0;j<y;j++)
+				{ 
+					cell1 = row.insertCell(j);
+					cell1.innerHTML = "Best Developer ever : Ayah Alaqarbeh";
+				}
+
+			}
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		table{
+			border-collapse: collapse;
+			margin-top: 20px;
+			margin-left: 100px;			
+		}
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		document.write("<table border='1'>");
+		document.write("<tr>");
+		document.write("<td>ID</td>");
+		document.write("<td>Name</td>");
+		document.write("<td>Salary</td>");
+		document.write("<td>Image</td>");
+		document.write("</tr>");
+		
+		var Salary =[
+
+		{
+			ID: 1 ,
+			Name : "Afaf",
+			Salary : 400 ,
+			Image :"img/author_2.png"
+		},
+		{
+			ID: 2 ,
+			Name : "Ahmad",
+			Salary :700 ,
+			Image : "img/author_1.png"
+		},
+		{
+			ID: 3 ,
+			Name : "Mohammad",
+			Salary :500 ,
+			Image : "img/author_3.png"
+		},
+
+		];
+		
+		for (key in Salary)
+		{
+			document.write("<tr>");
+			document.write("<td>"+Salary[key].ID+"</td>");
+			document.write("<td>"+Salary[key].Name+"</td>");
+			document.write("<td>"+Salary[key].Salary+"</td>");
+			document.write("<td> <img src='"+Salary[key].Image+"'> </td>");
+			document.write("</td>");
+		}				
+		document.write("</table>");
+
+	</script> 
+
+</body>
+</html>
